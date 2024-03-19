@@ -19,7 +19,7 @@ Some Examples for Package Managers,
 03. As a Homebrew installation.
 04. As a Choco installation.
 
-### 01. pnpm as an Standalong Script
+### 01. `pnpm` as an Standalong Script
 
 This method helps you to install `pnpm` without any pre install package managers.
 
@@ -36,6 +36,7 @@ curl -fsSL https://get.pnpm.io/install.sh | sh -
 
 </br>
 
+ ---------- [ Mac OS only ] ----------
 Now let's Configure Changes we were made,
 
 ```sh
@@ -52,4 +53,54 @@ Then to start using pnpm,
 source /Users/upekhansaja/.zshrc
 ```
 
-<!-- To be continued..!  -->
+***
+
+
+### 02. `pnpm` via npm installation.
+
+This method helps you to install `pnpm` with the help of `npm`, In here there are 2 package options as follows
+
+- `npm` is a ordinary version of pnpm, which needs Node.js to run.
+- `@pnpm/exe` - package which includes NodeJS into an executable.
+
+*If you are prefer to continue with pre-installed NodeJS*
+
+```sh
+npm install -g pnpm
+```
+
+*or*
+
+*This may be used on systems with **no** Node.js installed.*
+
+```sh
+npm install -g @pnpm/exe
+```
+
+
+***
+
+
+### 03. `pnpm` via Homebrew installation.
+
+If your using Homebrew as your package manager,
+
+```sh
+brew install pnpm
+```
+
+***
+
+
+### 04. `pnpm` via Choco installation.
+
+If you have installed Chocolatey,
+
+```sh
+choco install pnpm
+```
+
+***
+
+
+*For futher reference visit `pnpm` [installation guide](https://pnpm.io/installation).*
